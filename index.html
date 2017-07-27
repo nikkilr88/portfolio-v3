@@ -1,0 +1,141 @@
+<!--  
+TODO:
+Add contact form
+Add mobile nav 🗸
+Add working links
+Add 'Back To Top' button
+Improve 'Projects' section 🗸
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,400|Cookie" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!--MAVBAR-->
+    <nav>
+        <i class="fa fa-bars"></i>
+        <ul>
+            <li id="about">About</li>
+            <li id="studies">Studies</li>
+            <li id="projects">Projects</li>
+        </ul>
+    </nav>
+
+    <!--POPUP INFO-->
+    <div id="popupInfo">
+        <span class="close"><i class="fa fa-times-circle"></i></span>
+        <h3 id="heading"><p></p></h3>
+        <span id="content"></span>
+    </div>
+
+    <!--HEADER-->
+    <div class="header">
+        <div class="txtbg">
+            <h1>Hey Howdy Hi!</h1>
+            <h2>Nikki L.R. | Web Developer</h2>
+        </div>
+    </div>
+
+    <!--BOX SECTION-->
+    <div class="contain">
+        <div class="box ">
+            <i class="fa fa-html5 fa-2x"></i>
+            <h2>HTML / CSS</h2>
+            <p>I have experience with HTML5, CSS3 and Bootstrap. I know how to make things pretty!</p>
+            <button class="btn" id="html">Learn More</button>
+        </div>
+        <div class="box ">
+            <i class="fa fa-code fa-2x"></i>
+            <h2>JavaScript</h2>
+            <p>The logic behind my websites: Vanilla JS, jQuery, ReactJS <br /> Loading: Angular 2/4</p>
+            <button class="btn" id="js">Learn More</button>
+        </div>
+        <div class="box ">
+            <i class="fa fa-terminal fa-2x"></i>
+            <h2>Backend</h2>
+            <p>Currently working on Express & MongoDB. I have experience with NPM and RESTful routing.</p>
+            <button class="btn" id="backend">Learn More</button>
+        </div>
+    </div>
+    
+    <div class="divider">
+        <p>"Honestly, this is here just because I needed a divider, and it looks better than an hr"</p>
+    </div>
+    
+    <!--FEATURETTE HEADING-->
+        <div class="featurette">
+            <!--       https://dribbble.com/shots/977830-apple-devices-flat-icons-psd -->
+            
+            <img src="images/responsive.png" id="responsiveImg" />
+            <h1>Clean Design. Responsive Layout.</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem porro cumque ex cum ducimus adipisci enim assumenda animi sequi officia debitis. Itaque, perferendis voluptas.</p>
+        </div>
+
+
+    <!--MAIN CONTENT-->
+    <div class="main">
+        <!--ABOUT ME SECTION-->
+        <div class="aboutMe">
+            <span>
+                <h1>Meet The Dev</h1>
+                <img src="images/avatar.png" class="profileImg" />
+                <p style="text-align:center">Nice to meet you!</p>
+                <p><strong>TL;DR:</strong> Speaks English y un poco de español. From Milwaukee, WI and currently living in Mexico. Self-taught front-end web dev who loves tea.</p>
+                
+                <p>Hello! I'm Nikki. I'm a self-taught web developer who's currently working through freeCodeCamp, Codecademy, Practical JS and other online courses I happen to stumble upon.</p>
+
+                <p>I finished freeCodeCamp's front-end course on May 22, 2017. My plan is to reinforce what I have learned and continue onto the data visualization and back-end courses.</p>
+                <p>I recently completed the #100DaysOfCode challenge and am now moving onto #301DaysOfCode. I feel that challenges like these help me to stay motivated and form better habits.</p>  
+          </span>
+        </div>
+
+        <!--PROJECT SECTION-->
+        <div class="projects">
+            <h1>Projects</h1>
+            <section>
+                <div class="project"><img src="images/giphy.png"><span class="projectDetails"><h5>Giphy API</h5> HTML, CSS & jQuery <a href="https://nikkilr88.github.io/giphy" target="_blank"><button>View Live</button></a></span></div>
+
+                <div class="project"><img src="images/quote-react.png"><span class="projectDetails"><h5>Random Quote Generator V2</h5> HTML, CSS & ReactJS<a href="https://nikkilr88.github.io/fcc-random-quote/" target="_blank"><button>View Live</button></a></span></div>
+
+                <div class="project"><img src="images/cal2.png"><span class="projectDetails "><h5>Calculator V2</h5> HTML, Scss & jQuery<a href="https://nikkilr88.github.io/fcc-calculatorv2/" target="_blank "><button>View Live</button></a></span></div>
+                
+                <div class="project "><img src="images/google-home.png "><span class="projectDetails "><h5>Google Homepage</h5>The Odin Project - HTML, CSS & jQuery<a href="https://nikkilr88.github.io/google-homepage/ " target="_blank "><button>View Live</button></a></span></div>
+
+                <div class="project "><img src="images/slider.png "><span class="projectDetails "><h5>Webpage w/ Slider</h5> HTML, Scss & jQuery<a href="https://codepen.io/nikkilr88/full/jBJZEd " target="_blank "><button>View Live</button></a></span></div>
+
+                <div class="project "><img src="images/timer.png "><span class="projectDetails "><h5>Pomodoro Timer</h5> Intermediate Front-End Project<br>HTML, Scss & jQuery<a href="https://codepen.io/nikkilr88/full/ybgWPb/" target="_blank "><button>View Live</button></a></span></div>
+
+                <div class="project "><img src="images/twitch-api.png "><span class="projectDetails"><h5>Twitch API Basic</h5> Intermediate Front-End Project<br>HTML, Scss & jQuery<a href="https://codepen.io/nikkilr88/full/mmMBJM " target="_blank "><button>View Live</button></a></span></div>
+
+                <div class="project "><img src="images/weather.png "><span class="projectDetails "><h5>Local Weather</h5> Intermediate Front-End Project<br>HTML, Scss & jQuery<a href="https://codepen.io/nikkilr88/full/LWdeyY " target="_blank "><button>View Live</button></a></span></div>
+
+                <div class="project "><img src="images/wiki1.png "><span class="projectDetails "><h5>Wikipedia Viewer</h5> Intermediate Front-End Project<br>HTML, CSS & jQuery<a href="https://codepen.io/nikkilr88/full/PpdBEe" target="_blank "><button>View Live</button></a></span></div>
+            </section>
+        </div>
+    </div>
+    
+    <!--FOOTER-->
+    <footer>
+        <p class="social ">
+            <a href="https://twitter.com/nikkilr88 " target="_blank "><i class="fa fa-twitter "></i></a>
+            <a href="https://plus.google.com/109157115480808732533 " target="_blank "><i class="fa fa-google-plus "></i></a>
+            <a href="https://github.com/nikkilr88 " target="_blank "><i class="fa fa-github "></i></a>
+            <a href="https://codepen.io/nikkilr88/ " target="_blank "><i class="fa fa-codepen "></i></a>
+            <a href="https://www.freecodecamp.com/nikkilr88 " target="_blank "><i class="fa fa-free-code-camp "></i></a></p>
+        <p>Coded with <i class="fa fa-heart "></i> by Nikki L.R.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
+    <script type="text/javascript " src="script.js "></script>
+</body>
+
+</html>
