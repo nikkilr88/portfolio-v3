@@ -70,7 +70,7 @@ $(document).ready(function() {
    //Popup Info
    $("#html").on("click", function() {
       $('#popupInfo #heading').text("HTML / CSS");
-      $('#popupInfo #content').html("<p>I began Learning the basics of HTML and CSS in January of 2017. I started off with Codecademy and later stumbled upon FreeCodeCamp. I completed all of their frontend lessons and projects, and eventually recieved my frontend certificate in May of 2017.</p><p>I have also completed a Codecademy course for responsive design and began their HTML & CSS course. I am currently putting it off to the side to focus on my bootcamp.<a href=\"https://preview.c9users.io/nicolesattler/frontend-projects/portfolioRedo/images/cert.png\"><img src='images/cert.png' /></a>");
+      $('#popupInfo #content').html("<p>I began Learning the basics of HTML and CSS in January of 2017. I started off with Codecademy and later stumbled upon FreeCodeCamp. I completed all of their frontend lessons and projects, and eventually recieved my frontend certificate in May of 2017.</p><p>I have also completed a Codecademy course for responsive design and began their HTML & CSS course. I am currently putting it off to the side to focus on my bootcamp.<a href=\"images/cert.png\"><img src='images/cert.png' /></a>");
       $('#popupInfo').show("fade");
    });
 
