@@ -15,7 +15,13 @@ $(document).ready(function() {
 
    //Open and close nav
    $(".fa-bars").on("click", function() {
+      var scrollTop = $(window).scrollTop(),
+         height = $(window).height();
+      
       $("nav ul").slideToggle();
+      if(scrollTop < height - 45){
+         $("nav").css({"background": "rgba(0,0,0,0.8)"});
+      }
    });
 
    //Box click details
