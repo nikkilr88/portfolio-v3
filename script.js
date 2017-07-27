@@ -46,7 +46,7 @@ $(document).ready(function() {
 
       if (scrollTop > height - 45) {
          $("nav").css({"background": "#fff", "box-shadow": "0 1px 3px rgba(0,0,0,0.1)"});
-         $("nav, nav .fa-bars").css("color", "#888");
+         $("nav li, nav .fa-bars").css("color", "#666");
       }
       else {
          $("nav").css({"background": "none", "box-shadow": "none"});
