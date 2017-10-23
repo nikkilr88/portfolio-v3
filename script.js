@@ -38,7 +38,7 @@ $(document).ready(function() {
    //Change menu color on scroll
    $(window).scroll(function() {
       if ($(window).width() < 925) {
-         $("nav > ul").hide();
+         $("nav > ul").hide(500);
       }
 
       var scrollTop = $(window).scrollTop(),
