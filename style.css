@@ -71,6 +71,12 @@ nav li:hover {
   border-radius: 3px;
 }
 
+#popupInfo a {
+  text-decoration: none;
+  color: #555;
+  border-bottom: 1px dotted #555;
+}
+
 .close {
   position: relative;
   float: right;
