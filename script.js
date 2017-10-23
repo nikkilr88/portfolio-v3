@@ -76,7 +76,7 @@ $(document).ready(function() {
 
    $("#js").on("click", function() {
       $('#popupInfo #heading').text("JavaScript");
-      $('#popupInfo #content').html("<p>JavaScript is where the fun begins! I began learning vanilla JS with both Codecademy and FreeCodeCamp and have since completed both courses. Doing FreeCodeCamp's algorithm challenges was pretty helpful because it taught me how do my own research and even code with others.</p><p>I finished the basic and intermediate challenges, and I am currently working through the advanced ones. It's probably going to take me a while. <i class=\"fa fa-smile-o\"></i></p><p>I have also completed a couple of ReactJS courses and began building some FCC projects. This has been one of my favorite JS libraries so far.</p>");
+      $('#popupInfo #content').html("<p>JavaScript is where the fun begins! I began learning vanilla JS with both Codecademy and FreeCodeCamp and have since completed both courses. FCC's algorithm challenges were very helpful because they taught me how do my own research and code with others.</p><p>I have also completed a couple of ReactJS courses and began building some FCC projects. This has been one of my favorite JS libraries so far.</p> <a href='https://www.freecodecamp.org/nikkilr88' target='_blank'>Have a look at some of the algorithm challenges I have completed</a>");
       $('#popupInfo').show("fade");
 
    });
