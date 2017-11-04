@@ -5,6 +5,7 @@ body {
   font-family: 'Open Sans';
   font-weight: 300;
   background: #fff;
+  overflow-x: hidden;
 }
 
 
@@ -134,7 +135,7 @@ nav li:hover {
 .contain {
   padding: 70px 0;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .box {
