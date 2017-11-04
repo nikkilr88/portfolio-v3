@@ -13,8 +13,10 @@ Replace header and about me bg photos
 
 <head>
     <title>Nikki L.R. | Portfolio</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,400|Cookie" rel="stylesheet">
@@ -24,7 +26,7 @@ Replace header and about me bg photos
 
 <body>
     <!--MAVBAR-->
-    <nav>
+    <nav class="nav">
         <i class="fa fa-bars"></i>
         <ul>
             <li id="about">About</li>
@@ -36,7 +38,9 @@ Replace header and about me bg photos
     <!--POPUP INFO-->
     <div id="popupInfo">
         <span class="close"><i class="fa fa-times-circle"></i></span>
-        <h3 id="heading"><p></p></h3>
+        <h3 id="heading">
+            <p></p>
+        </h3>
         <span id="content"></span>
     </div>
 
@@ -69,19 +73,22 @@ Replace header and about me bg photos
             <button class="btn" id="backend">Learn More</button>
         </div>
     </div>
-    
+
     <div class="divider">
-        <p>"Honestly, this is here just because I needed a divider, and it looks better than an hr"</p>
+        <p>"Honestly, this is just here because I needed a divider, and it looks better than an hr"</p>
     </div>
-    
+
     <!--FEATURETTE HEADING-->
-        <div class="featurette">
-            <!--       https://dribbble.com/shots/977830-apple-devices-flat-icons-psd -->
-            
-            <img src="images/responsive.png" id="responsiveImg" />
+    <div class="featurette">
+        <!--       https://dribbble.com/shots/977830-apple-devices-flat-icons-psd -->
+
+        <img src="images/responsive.png" id="responsiveImg" />
+        <section>
             <h1>Clean Design. Responsive Layout.</h1>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem porro cumque ex cum ducimus adipisci enim assumenda animi sequi officia debitis. Itaque, perferendis voluptas.</p>
-        </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem porro cumque ex cum ducimus adipisci enim assumenda animi sequi officia debitis. Itaque, perferendis voluptas.</p>
+        </section>
+
+    </div>
 
 
     <!--MAIN CONTENT-->
@@ -108,7 +115,7 @@ Replace header and about me bg photos
             <section></section>
         </div>
     </div>
-    
+
     <!--FOOTER-->
     <footer>
         <p class="social ">
@@ -117,10 +124,15 @@ Replace header and about me bg photos
             <a href="https://github.com/nikkilr88 " target="_blank "><i class="fa fa-github "></i></a>
             <a href="https://codepen.io/nikkilr88/ " target="_blank "><i class="fa fa-codepen "></i></a>
             <a href="https://www.freecodecamp.com/nikkilr88 " target="_blank "><i class="fa fa-free-code-camp "></i></a></p>
-        <p>Coded with <i class="fa fa-heart "></i> by Nikki L.R.</p>
+        <p>Coded with <i class="fa fa-heart"></i> by Nikki L.R.</p>
     </footer>
+
+    <!--Load CDN scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--Load local scripts-->
     <script type="text/javascript" src="./js/projects.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
