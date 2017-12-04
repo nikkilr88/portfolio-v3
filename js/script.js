@@ -96,10 +96,14 @@ $(document).ready(function() {
 
    //Project section
    $(".projects").on("mouseover", ".project", function() {
-      $(this).find(".projectDetails").show("fade");
+      $(this).find(".projectDetails").show("slide", {
+          'direction': 'down'
+      }, 200);
    });
    $(".projects").on("mouseleave", ".project", function() {
-      $(this).find(".projectDetails").hide("fade");
+      $(this).find(".projectDetails").hide("slide", {
+          'direction': 'down'
+      }, 200);
    });
 
    //Populate projects section
