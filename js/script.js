@@ -95,16 +95,16 @@ $(document).ready(function() {
    });
 
    //Project section
-   $(".projects").on("mouseover", ".project", function() {
-      $(this).find(".projectDetails").show("slide", {
-          'direction': 'down'
-      }, 200);
-   });
-   $(".projects").on("mouseleave", ".project", function() {
-      $(this).find(".projectDetails").hide("slide", {
-          'direction': 'down'
-      }, 200);
-   });
+//    $(".projects").on("mouseover", ".project", function() {
+//       $(this).find(".projectDetails").show("slide", {
+//           'direction': 'down'
+//       }, 200);
+//    });
+//    $(".projects").on("mouseleave", ".project", function() {
+//       $(this).find(".projectDetails").hide("slide", {
+//           'direction': 'down'
+//       }, 200);
+//    });
 
    //Populate projects section
    projects.forEach(function(project) {
@@ -115,7 +115,7 @@ $(document).ready(function() {
    });
 
    //Hide project details
-   $(".projectDetails").hide();
+   //$(".projectDetails").hide();
 
    /*
 <div class="project "><img src="images/wiki1.png "><span class="projectDetails "><h5>Wikipedia Viewer</h5> Intermediate Front-End Project<br>HTML, CSS & jQuery<a href="https://codepen.io/nikkilr88/full/PpdBEe" target="_blank "><button>View Live</button></a></span></div>
