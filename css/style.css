@@ -330,22 +330,27 @@ nav li:hover {
   border-radius: 2px;
 }
 
+.project:hover .projectDetails {
+  height: 100%
+}
+
 .projectDetails {
   position: absolute;
-  top: 0;
   left: 0;
-  height: 100%;
+  bottom: 0;
+  height: 0;
+  overflow: hidden;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 5px;
   color: whitesmoke;
   box-sizing: border-box;
   background: rgba(51, 51, 51, 0.95);
   border-radius: 2px;
+  transition: all 0.2s ease-in-out;
 }
 
 .projectDetails h5 {
