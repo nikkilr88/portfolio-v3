@@ -107,19 +107,12 @@ $(document).ready(function() {
 //    });
 
    //Populate projects section
-   projects.forEach(function(project) {
+   var projectDivs = projects.map(createProject).join('\n');
+   $(".projects section").html(projectDivs);
 
-      var projectDiv = '<div class="project"><img src=' + project.img + '><span class="projectDetails"><h5>' + project.name + '</h5>' + project.description + '<a href="' + project.link + '" target="_blank "><button>View Live</button></a></span></div>';
-
-      $('.projects section').append(projectDiv);
-   });
-
-   //Hide project details
-   //$(".projectDetails").hide();
-
-   /*
-<div class="project "><img src="images/wiki1.png "><span class="projectDetails "><h5>Wikipedia Viewer</h5> Intermediate Front-End Project<br>HTML, CSS & jQuery<a href="https://codepen.io/nikkilr88/full/PpdBEe" target="_blank "><button>View Live</button></a></span></div>
-*/
+   function createProject(obj){
+       return '<div class="project"><img src=' + obj.img + '><span class="projectDetails"><h5>' + obj.name + '</h5>' + obj.description + '<a href="' + obj.link + '" target="_blank "><button>View Live</button></a></span></div>';
+   }
 
    //ScrollReveal Config
 
