@@ -321,6 +321,7 @@ nav li:hover {
   margin: 1.66%;
   width: 30%;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .project img {
@@ -331,14 +332,14 @@ nav li:hover {
 }
 
 .project:hover .projectDetails {
-  height: 100%
+  transform: translateY(0px);
 }
 
 .projectDetails {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 0;
+  height: 100%;
   overflow: hidden;
   width: 100%;
   display: flex;
@@ -350,7 +351,8 @@ nav li:hover {
   box-sizing: border-box;
   background: rgba(51, 51, 51, 0.95);
   border-radius: 2px;
-  transition: all 0.2s ease-in-out;
+  transform: translateY(100%);
+  transition: transform 0.2s ease-in-out;
 }
 
 .projectDetails h5 {
