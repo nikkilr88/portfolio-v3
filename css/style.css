@@ -332,12 +332,13 @@ nav li:hover {
 }
 
 .project:hover .projectDetails {
-  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);  
 }
 
 .projectDetails {
   position: absolute;
-  left: 0;
   bottom: 0;
   height: 100%;
   overflow: hidden;
@@ -351,8 +352,10 @@ nav li:hover {
   box-sizing: border-box;
   background: rgba(51, 51, 51, 0.95);
   border-radius: 2px;
-  transform: translateY(100%);
-  transition: transform 0.2s ease-in-out;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);  
+  transition: all 0.3s;
 }
 
 .projectDetails h5 {
