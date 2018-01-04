@@ -36,7 +36,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  padding: 10px;
+  padding: 15px;
   color: #ccc;
 }
 
@@ -100,7 +100,7 @@ nav li:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 90vh;
 }
 
 .header h1 {
@@ -124,7 +124,7 @@ nav li:hover {
 .header .txtbg {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,25 +133,32 @@ nav li:hover {
 
 /*Top box section*/
 .contain {
-  padding: 70px 0;
+  position: relative;
+  padding: 0 0 70px 0;
   width: 100%;
-  overflow: hidden;
+  height: 250px;
+  background: #fcfcfc;
+  z-index: 999;
 }
 
 .box {
   float: left;
   width: 30%;
-  margin: 1.66%;
+  margin: -65px 1.66% 1.66%;
+  padding: 15px 0;
   color: #555;
   text-align: center;
   box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 2px 15px 3px rgba(0,0,0,0.1);
+  z-index: 2;
 }
 
-.box .fa {
+.box .icon {
   background: #5f97ef;
-  padding: 10px;
-  height: 55px;
-  width: 55px;
+  padding: 15px;
+  height: 25px;
+  width: 25px;
   line-height: 55px;
   color: #fff;
   border-radius: 50%;
@@ -268,10 +275,11 @@ nav li:hover {
 .aboutMe span {
   position: relative;
   display: block;
-  padding: 100px 10% 125px 10%;
+  padding: 100px 0 125px 0;
+  margin: 0 auto;
   box-sizing: border-box;
   color: whitesmoke;
-  width: 100%;
+  width: 60%;
   top: 0;
   left: 0;
 }
@@ -437,6 +445,8 @@ footer .social .fa {
     padding: 0;
     border: none;
     box-shadow: none;
+    overflow: auto;
+    height: auto;
   }
   .box {
     height: auto;
@@ -446,6 +456,7 @@ footer .social .fa {
     max-width: 95%;
     margin: 0 auto;
     padding: 25px;
+    box-shadow: none;
   }
   
   .box:last-of-type {
@@ -459,6 +470,10 @@ footer .social .fa {
   }
   
   .main .section {
+    width: 95%;
+  }
+
+  .aboutMe span {
     width: 95%;
   }
 
