@@ -99,18 +99,18 @@ $(document).ready(function () {
     //ScrollReveal Config
     window.sr = ScrollReveal();
 
-    sr.reveal('.txtbg h1', {
-        duration: 1000,
-        origin: 'left',
-        distance: '300px'
-    });
+    // sr.reveal('.txtbg h1', {
+    //     duration: 1000,
+    //     origin: 'left',
+    //     distance: '300px'
+    // });
 
-    sr.reveal('.txtbg h2', {
-        duration: 1000,
-        origin: 'right',
-        distance: '300px',
-        delay: 1000
-    });
+    // sr.reveal('.txtbg h2', {
+    //     duration: 1000,
+    //     origin: 'right',
+    //     distance: '300px',
+    //     delay: 1000
+    // });
 
     sr.reveal('.featurette img', {
         duration: 2000,
