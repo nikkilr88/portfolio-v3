@@ -31,10 +31,9 @@ $(document).ready(function () {
             $("nav > ul").hide(500);
         }
 
-        var scrollTop = $(window).scrollTop(),
-            height = $(window).height();
+        var scrollTop = $(window).scrollTop();
 
-        if (scrollTop > height - 45) {
+        if (scrollTop > 100) {
             $("nav").css({ "background": "#fff", "box-shadow": "0 1px 3px rgba(0,0,0,0.1)" });
             $("nav li, nav .fa-bars").css("color", "#666");
         }
