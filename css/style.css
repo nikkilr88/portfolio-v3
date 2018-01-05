@@ -23,6 +23,8 @@ nav ul {
   float: right;
   text-align: right;
   opacity: 0.25;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
