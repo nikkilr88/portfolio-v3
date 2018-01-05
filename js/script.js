@@ -26,11 +26,14 @@ $(document).ready(function () {
        return false;
    });
 
+   $('.box button').on('click', function(){
+       $('html, body').css('overflow','hidden')
+   })
 
     //Popup Info
     $("#html").on("click", function () {
         $('#popupInfo #heading').text("HTML / CSS");
-        $('#popupInfo #content').html("<p>I began Learning the basics of HTML and CSS in January of 2017. I started off with Codecademy and later stumbled upon FreeCodeCamp. I completed all of their frontend lessons and projects, and eventually recieved my frontend certificate in May of 2017.</p><p>I have also completed a Codecademy course for responsive design and began their HTML & CSS course. I am currently putting it off to the side to focus on my bootcamp.<a href=\"images/cert.png\"><img src='images/cert.png' /></a>");
+        $('#popupInfo #content').html("<p>I began Learning the basics of HTML and CSS in January of 2017. I started off with Codecademy and later stumbled upon FreeCodeCamp. I completed all of their frontend lessons and projects, and eventually recieved my frontend certificate in May of 2017.</p><p>I have also completed a Codecademy course for responsive design and began their HTML & CSS course. I am currently putting it off to the side to focus on my bootcamp.</p><a href=\"images/cert.png\" target=\"_blank\"><img src='images/cert.png' /></a> <a href=\"images/design-cert.jpg\" target=\"_blank\"><img src='images/design-cert.jpg' /></a>");
         $('#popupInfo').show("fade");
     });
 
@@ -57,6 +60,7 @@ $(document).ready(function () {
 
     $(".close").on('click', function () {
         $("#popupInfo").hide("fade");
+        $('html, body').css('overflow', 'auto')
     });
 
 
@@ -97,7 +101,7 @@ $(document).ready(function () {
 
     sr.reveal('.box, .project', {
         duration: 2000,
-        viewFactor: 0.2
+        viewFactor: 0.1
     });
 
 });
