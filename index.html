@@ -20,20 +20,16 @@ Replace header and about me bg photos
     <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,400|Cookie" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
-
-
 </head>
 
 <body>
     <!--MAVBAR-->
     <nav class="nav">
-        <i class="fas fa-bars"></i>
         <ul>
-            <li id="about">About</li>
-            <li id="studies">Studies</li>
-            <li id="projects">Projects</li>
+            <li><a href="#top"><i class="fas fa-home"></i></a></li>
+            <li><a href="#aboutMe"><i class="fas fa-info"></i></a></li>
+            <li><a href="#projects"><i class="fas fa-briefcase"></i></a></li>
         </ul>
     </nav>
 
@@ -49,12 +45,12 @@ Replace header and about me bg photos
     </div>
 
     <!--HEADER-->
-    <div class="header">
+    <header class="header" id="top">
         <div class="txtbg">
             <h1>Hey Howdy Hi!</h1>
             <h2>Nikki L.R. | Web Developer</h2>
         </div>
-    </div>
+    </header>
 
     <!--BOX SECTION-->
     <div class="contain">
@@ -99,7 +95,7 @@ Replace header and about me bg photos
     <!--MAIN CONTENT-->
     <div class="main">
         <!--ABOUT ME SECTION-->
-        <div class="aboutMe">
+        <div class="aboutMe" id="aboutMe">
             <span>
                 <h1>Meet The Dev</h1>
                 <img src="images/avatar.png" class="profileImg" />
@@ -119,7 +115,7 @@ Replace header and about me bg photos
         </div>
 
         <!--PROJECT SECTION-->
-        <div class="projects">
+        <div class="projects" id="projects">
             <h1>Projects</h1>
             <!--Projects loaded dynamically using jQuery-->
             <section></section>
@@ -128,25 +124,20 @@ Replace header and about me bg photos
 
     <!--FOOTER-->
     <footer>
-        <p class="social ">
-            <a href="https://twitter.com/nikkilr88 " target="_blank ">
-                <i class="fa fa-twitter "></i>
-            </a>
-            <a href="https://plus.google.com/109157115480808732533 " target="_blank ">
-                <i class="fa fa-google-plus "></i>
-            </a>
-            <a href="https://github.com/nikkilr88 " target="_blank ">
-                <i class="fa fa-github "></i>
-            </a>
-            <a href="https://codepen.io/nikkilr88/ " target="_blank ">
-                <i class="fa fa-codepen "></i>
-            </a>
-            <a href="https://www.freecodecamp.com/nikkilr88 " target="_blank ">
-                <i class="fa fa-free-code-camp "></i>
-            </a>
-        </p>
+        <div class="social">
+            <a href="https://twitter.com/nikkilr88" target="_blank"><i class="fab fa-twitter"></i></a>
+           
+            <a href="https://plus.google.com/109157115480808732533" target="_blank"><i class="fab fa-google-plus"></i></a>
+
+            <a href="https://github.com/nikkilr88" target="_blank"><i class="fab fa-github"></i></a>
+
+            <a href="https://codepen.io/nikkilr88/" target="_blank"><i class="fab fa-codepen"></i></a>
+
+            <a href="https://www.freecodecamp.com/nikkilr88" target="_blank"><i class="fab fa-free-code-camp"></i></a>
+        </div>
+
         <p>Coded with
-            <i class="fa fa-heart"></i> by Nikki L.R.</p>
+            <i class="fas fa-heart"></i> by Nikki L.R.</p>
     </footer>
 
     <!--Load CDN scripts-->
