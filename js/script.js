@@ -4,15 +4,15 @@ $(document).ready(function () {
     let prevScrollPos = 0;
 
     $(window).scroll(function(){
-        if($(this).width() <= 926) {
+        if($(window).width() <= 926) {
             if ($(this).scrollTop() > prevScrollPos) {
-                $('nav').fadeOut();
+                $('nav').css('opacity', '0');
             }
             else if ($(this).scrollTop() == prevScrollPos) {
                 //Do nothing -- IE fix
             }
             else {
-                $('nav').fadeIn();
+                $('nav').css('opacity', '1');
             }
             prevScrollPos = $(this).scrollTop();
         }
