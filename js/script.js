@@ -1,60 +1,30 @@
 
 $(document).ready(function () {
 
-    //On window load/resize show/hide mobile nav
-    $(window).resize(function () {
-        if ($(window).width() < 925) {
-            //Open and close mobile menu
-            $("nav ul").hide();
-        }
-        else {
-            $("nav ul").show();
-        }
-    });
+    let prevScrollPos = 0;
 
-
-    //Open and close nav
-    $(".fa-bars").on("click", function () {
-        var scrollTop = $(window).scrollTop(),
-            height = $(window).height();
-
-        $("nav ul").slideToggle();
-        if (scrollTop < height - 45) {
-            $("nav").css({ "background": "rgba(0,0,0,0.8)" });
+    $(window).scroll(function(){
+        if($(this).width() <= 926) {
+            if ($(this).scrollTop() > prevScrollPos) {
+                $('nav').fadeOut();
+            }
+            else if ($(this).scrollTop() == prevScrollPos) {
+                //Do nothing -- IE fix
+            }
+            else {
+                $('nav').fadeIn();
+            }
+            prevScrollPos = $(this).scrollTop();
         }
     });
-
-
-    //Change menu color on scroll
-    $(window).scroll(function () {
-        if ($(window).width() < 925) {
-            $("nav > ul").hide(500);
-        }
-
-        var scrollTop = $(window).scrollTop();
-
-        if (scrollTop > 100) {
-            $("nav").css({ "background": "#fff", "box-shadow": "0 1px 3px rgba(0,0,0,0.1)" });
-            $("nav li, nav .fa-bars").css("color", "#666");
-        }
-        else {
-            $("nav").css({ "background": "none", "box-shadow": "none" });
-            $("nav li, nav .fa-bars").css("color", "#ccc");
-        }
-    });
-
+    
     //Scroll to section
-    $('#about').on('click', function () {
+   $('nav ul li a').on('click', function() {
         $('html, body').animate({
-            scrollTop: $('.aboutMe').offset().top
-        }, 1000);
-    });
-
-    $('#projects').on('click', function () {
-        $('html, body').animate({
-            scrollTop: $('.projects').offset().top
-        }, 1000);
-    });
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 500);
+       return false;
+   });
 
 
     //Popup Info
