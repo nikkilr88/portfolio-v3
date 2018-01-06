@@ -337,7 +337,7 @@ nav li a .fas {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.96)), to(rgba(51, 51, 51, 0.96))), url("../images/about-me.jpg");
   background: -webkit-linear-gradient(rgba(51, 51, 51, 0.96), rgba(51, 51, 51, 0.96)), url("../images/about-me.jpg");
   background: -o-linear-gradient(rgba(51, 51, 51, 0.96), rgba(51, 51, 51, 0.96)), url("../images/about-me.jpg");
-  background: linear-gradient(rgba(51, 51, 51, 0.96), rgba(51, 51, 51, 0.96)), url("../images/about-me.jpg");
+  background: linear-gradient(rgba(68,68,68,0.98), rgba(68,68,68,0.98)), url("../images/about-me.jpg");
   background-size: cover;
   background-position: center bottom;
   color: whitesmoke;
