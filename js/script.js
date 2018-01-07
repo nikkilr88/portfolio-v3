@@ -53,7 +53,7 @@ $(document).ready(function () {
     //Close Popup Info
     $(document).on("click", function (e) {
 
-        if (!$(e.target).closest("#popupInfo").length && !$(e.target).is(".btn")) {
+        if (!$(e.target).closest("#popupInfo").length && !$(e.target).is(".box button")) {
             $("#popupInfo").hide("fade");
         }
     });
