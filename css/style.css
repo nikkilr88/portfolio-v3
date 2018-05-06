@@ -18,7 +18,6 @@ nav {
 nav ul {
   margin: 0;
   padding: 0;
-  display: inline-block;
   float: right;
   text-align: right;
   opacity: 0.3;
@@ -40,7 +39,7 @@ nav li {
 
 nav li:hover .fas {
   cursor: pointer;
-  background: #16a085;
+  background: #1abc9c;
   color: #fcfcfc;
 }
 
@@ -54,7 +53,7 @@ nav li a .fas {
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
-  color: #999;
+  color: #fff;
 }
 
 /*Popup Info*/
@@ -87,7 +86,6 @@ nav li a .fas {
   width: 150px;
   height: 125px;
   margin: 15px auto;
-  display: inline;
   padding: 3px;
   border: 1px solid #ccc;
   border-radius: 3px;
