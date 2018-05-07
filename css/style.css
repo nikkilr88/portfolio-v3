@@ -183,18 +183,16 @@ nav li a .fas {
 }
 
 .box {
+  position: relative;
   float: left;
   width: 30%;
   margin: -65px 1.66% 1.66%;
   padding: 15px 0;
   color: #222;
   text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: #fff;
-  -webkit-box-shadow: 0 2px 15px 3px rgba(0,0,0,0.02);
-          box-shadow: 2 0 10px 3px rgba(0,0,0,0.02);
-          border-bottom: 3px solid rgba(0,0,0,0.05);
+  box-shadow: 2px 0 10px 3px rgba(0,0,0,0.1);
   z-index: 2;
   border-radius: 5px;
 }
@@ -258,8 +256,7 @@ nav li a .fas {
   width: 100%;
   background: linear-gradient(rgba(22, 160, 133, 0.75),rgba(22, 160, 133, 0.75)), url('../images/hypnotize.png');
   padding: 45px 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   color: whitesmoke;
   font-size: 35px;
@@ -291,8 +288,7 @@ nav li a .fas {
   margin: 0 auto;
   padding: 90px 10% 45px 10%;
   color: #666;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .featurette h1 {
@@ -353,8 +349,7 @@ nav li a .fas {
   margin: 50px 0;
   position: relative;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: #eee;
   color: whitesmoke;
 }
@@ -364,8 +359,7 @@ nav li a .fas {
   display: block;
   padding: 100px 0 125px 0;
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #444;
   width: 60%;
   top: 0;
@@ -499,8 +493,7 @@ nav li a .fas {
 
 footer {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: #eee;
   color: #555;
   font-size: 14px;
@@ -509,7 +502,7 @@ footer {
 
 footer .bottom {
   background: #1abc9c;
-  padding: 10px 0;
+  padding: 20px 0;
   color: #fcfcfc;
 }
 
