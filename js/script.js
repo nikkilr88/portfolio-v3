@@ -26,22 +26,16 @@ $(document).ready(function () {
 
     // POPUP INFO
     $("#html").on("click", function () {
-        $('#popupInfo #heading').text("HTML / CSS");
-        $('#popupInfo #content').html(descriptions.html);
-        $('#popupInfo').show("fade");
+        popup('HTML / CSS', descriptions.html)
     });
 
     $("#js").on("click", function () {
-        $('#popupInfo #heading').text("JavaScript");
-        $('#popupInfo #content').html(descriptions.js);
-        $('#popupInfo').show("fade");
-
+        popup('JavaScript', descriptions.js)
     });
 
     $("#backend").on("click", function () {
-        $('#popupInfo #heading').text("Backend");
-        $('#popupInfo #content').html(descriptions.backend);
-        $('#popupInfo').show("fade");
+        console.log('click')
+        popup('Backend', descriptions.backend);
     });
 
     // CLOSE POPUP SECTION
@@ -80,4 +74,10 @@ $(document).ready(function () {
 
 function createProject(obj) {
     return '<div class="project"><img src=' + obj.img + '><span class="projectDetails"><h5>' + obj.name + '</h5>' + obj.description + '<a href="' + obj.link + '" target="_blank "><button>View Live</button></a></span></div>';
+}
+
+function popup(title, content) {
+    $('#popupInfo #heading').text(title);
+    $('#popupInfo #content').html(content);
+    $('#popupInfo').show("fade");
 }
