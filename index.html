@@ -20,6 +20,7 @@ Replace header and about me bg photos
     <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,400|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
 </head>
 
@@ -48,47 +49,46 @@ Replace header and about me bg photos
         <div class="bg-img"></div>
         <div class="txtbg">
             <h1>Hi there, I'm Nikki!</h1>
-            <h2>I'm a jr. fullstack JavaScript developer with a passion for coding. Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <h2>I'm a fullstack JavaScript developer with a passion for coding and Lorem Ipsum text. Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
             <i class="fas fa-chevron-down"></i>
         </div>
     </header>
 
     <!--BOX SECTION-->
-    <div class="contain">
+    <section class="contain">
         <div class="box">
-            <i class="icon fab fa-html5 fa-2x"></i>
-            <h2>HTML / CSS</h2>
-            <p>I have experience with HTML5, CSS3 and Bootstrap. I know how to make things pretty!</p>
-            <button id="html">Learn More <i class="fas fa-long-arrow-alt-right"></i></button>
+            <i class="icon devicon-html5-plain"></i>
+            <h2>Frontend</h2>
+            <p>HTML, CSS, Bootstrap, vanilla JavaScript, jQuery and React.</p>
+            <button id="html" data-title="Frontend" data-load="front">Learn More <i class="fas fa-long-arrow-alt-right"></i></button>
         </div>
         <div class="box">
-            <i class="icon fab fa-js fa-2x"></i>
-            <h2>JavaScript</h2>
-            <p>The magic and logic behind my websites: Vanilla JS, jQuery and ReactJS</p>
-            <button id="js">Learn More <i class="fas fa-long-arrow-alt-right"></i></button>
-        </div>
-        <div class="box">
-            <i class="icon fab fa-node-js fa-2x"></i>
+            <i class="icon devicon-nodejs-plain"></i>
             <h2>Backend</h2>
-            <p>Node/Express, SQL & noSQL databases, Socket.io and Passport.js</p>
-            <button id="backend">Learn More <i class="fas fa-long-arrow-alt-right"></i></button>
+            <p>Node.js, Express and Socket.IO. CRUD and RESTful routing.</p>
+            <button id="js" data-title="Backend" data-load="back">Learn More <i class="fas fa-long-arrow-alt-right"></i></button>
         </div>
-    </div>
+        <div class="box">
+            <i class="icon devicon-mongodb-plain"></i>
+            <h2>Databases / Auth</h2>
+            <p>SQL & noSQL databases such as MongoDB and SQLite, Passport.js</p>
+            <button id="backend" data-title="Databases / Auth" data-load="data">Learn More <i class="fas fa-long-arrow-alt-right"></i></button>
+        </div>
+    </section>
 
     <div class="divider">
         <span>Want to get in touch?</span> <button>Send Me A Message</button>
     </div>
 
     <!--FEATURETTE HEADING-->
-    <div class="featurette">
+    <section class="featurette">
         <!--img from https://dribbble.com/shots/977830-apple-devices-flat-icons-psd -->
         <img src="images/flat.png" id="responsiveImg" />
         <section>
             <h1>Clean Design. Responsive Layout.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem porro cumque ex cum ducimus adipisci enim assumenda animi sequi officia debitis. Itaque, perferendis voluptas.</p>
         </section>
-
-    </div>
+    </section>
 
 
     <!--MAIN CONTENT-->
@@ -98,12 +98,6 @@ Replace header and about me bg photos
             <span>
                 <h1>Meet The Dev</h1>
                 <img src="images/avatar.png" class="profileImg" />
-                <p style="text-align:center">
-                    <i class="fas fa-user"></i>
-                    <i class="fas fa-gamepad"></i>
-                    <i class="fas fa-utensils"></i>
-                    <i class="fas fa-coffee"></i>
-                </p>
                 <p>
                     <strong>TL;DR:</strong> Speaks English y un poco de español. From Milwaukee, WI and currently living in Mexico.
                     Self-taught web developer who loves tea.</p>
