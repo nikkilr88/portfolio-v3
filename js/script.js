@@ -25,17 +25,11 @@ $(document).ready(function () {
    });
 
     // POPUP INFO
-    $("#html").on("click", function () {
-        popup('HTML / CSS', descriptions.html)
-    });
+    $("#html, #js, #backend").on("click", function () {
+        let title = $(this).data('title');
+        let section = $(this).data('load');
 
-    $("#js").on("click", function () {
-        popup('JavaScript', descriptions.js)
-    });
-
-    $("#backend").on("click", function () {
-        console.log('click')
-        popup('Backend', descriptions.backend);
+        popup(title, descriptions[section])
     });
 
     // CLOSE POPUP SECTION
@@ -52,17 +46,19 @@ $(document).ready(function () {
     window.sr = ScrollReveal();
 
     sr.reveal('.featurette img', {
-        duration: 2000,
+        duration: 1000,
         origin: 'left',
-        distance: '300px',
-        viewFactor: 0.2
+        distance: '100px',
+        viewFactor: 0.1,
+        easing: 'ease'
     });
 
     sr.reveal('.featurette section', {
-        duration: 2000,
+        duration: 1000,
         origin: 'right',
-        distance: '300px',
-        viewFactor: 0.2
+        distance: '100px',
+        viewFactor: 0.1,
+        easing: 'ease'
     });
 
     sr.reveal('.box, .project', {
@@ -73,7 +69,7 @@ $(document).ready(function () {
 });
 
 function createProject(obj) {
-    return '<div class="project"><img src=' + obj.img + '><span class="projectDetails"><h5>' + obj.name + '</h5>' + obj.description + '<a href="' + obj.link + '" target="_blank "><button>View Live</button></a></span></div>';
+    return '<div class="project"><img src=' + obj.img + '><span class="projectDetails"><div class="icons">' + obj.description + '</div><h5>' + obj.name + '</h5>' + '<a href="' + obj.link + '" target="_blank "><button>View Live</button></a></span></div>';
 }
 
 function popup(title, content) {
