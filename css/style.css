@@ -213,6 +213,7 @@ nav li a .fas {
 }
 
 .box {
+  position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 30%;
           flex: 1 0 30%;
@@ -230,13 +231,13 @@ nav li a .fas {
 }
 
 .box .icon {
+  position: absolute;
   background: #1abc9c;
   height: 55px;
   width: 55px;
   line-height: 55px;
   color: #fff;
   border-radius: 50%;
-  position: absolute;
   top: -27px;
   right: 0;
   left: 0;
