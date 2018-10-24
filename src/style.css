@@ -176,6 +176,7 @@ nav li a .fas {
 }
 
 .box {
+  position: relative;
   flex: 1 0 30%;
   padding: 15px 0;
   margin: -50px 1.66% 0 1.66%;
@@ -189,13 +190,13 @@ nav li a .fas {
 }
 
 .box .icon {
+  position: absolute;
   background: #1abc9c;
   height: 55px;
   width: 55px;
   line-height: 55px;
   color: #fff;
   border-radius: 50%;
-  position: absolute;
   top: -27px;
   right: 0;
   left: 0;
