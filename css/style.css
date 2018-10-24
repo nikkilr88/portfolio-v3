@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  margin: 50px auto;
+}
+
 /*Nav Menu*/
 
 nav {
@@ -34,8 +38,6 @@ nav ul:hover {
 nav li {
   display: inline-block;
   margin: 10px;
-  -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
 }
 
 nav li:hover .fas {
@@ -69,9 +71,9 @@ nav li a .fas {
   color: #555;
   text-align: center;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   display: none;
   z-index: 9999;
 }
@@ -122,6 +124,25 @@ nav li a .fas {
   left: 0;
   height: 100%;
   width: 100%;
+  background: -webkit-gradient(
+      linear,
+      left top, right top,
+      from(rgba(26, 188, 156, 0.7)),
+      to(rgba(192, 57, 43, 0.5))
+    ),
+    url('../images/desk.jpg');
+  background: -webkit-linear-gradient(
+      left,
+      rgba(26, 188, 156, 0.7),
+      rgba(192, 57, 43, 0.5)
+    ),
+    url('../images/desk.jpg');
+  background: -o-linear-gradient(
+      left,
+      rgba(26, 188, 156, 0.7),
+      rgba(192, 57, 43, 0.5)
+    ),
+    url('../images/desk.jpg');
   background: linear-gradient(
       to right,
       rgba(26, 188, 156, 0.7),
@@ -131,8 +152,11 @@ nav li a .fas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  filter: blur(1px);
-  transform: scale(1.05);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .header h1 {
@@ -162,14 +186,14 @@ nav li a .fas {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header .txtbg .fa-chevron-down {
@@ -179,24 +203,28 @@ nav li a .fas {
 }
 
 /*Top box section*/
-.contain {
-  padding: 0 0 30px 0;
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 100px 0;
   width: 100%;
-  height: 250px;
   background: #fcfcfc;
 }
 
 .box {
-  position: relative;
-  float: left;
-  width: 30%;
-  margin: -65px 1.66% 1.66%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
   padding: 15px 0;
+  margin: -50px 1.66% 0 1.66%;
   color: #222;
   text-align: center;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #fff;
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.1);
   z-index: 2;
   border-radius: 5px;
 }
@@ -232,8 +260,8 @@ nav li a .fas {
   color: #777;
   padding: 10px 15px;
   border-bottom: 1px solid #ccc;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   outline: none;
 }
@@ -245,34 +273,65 @@ nav li a .fas {
 }
 
 .box button .fa-long-arrow-alt-right {
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
   color: #777;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .box button:hover .fa-long-arrow-alt-right {
-  transform: translateX(75%);
+  -webkit-transform: translateX(75%);
+      -ms-transform: translateX(75%);
+          transform: translateX(75%);
   color: white;
 }
 
 /*Separater*/
 .divider {
   width: 100%;
+  margin-bottom: 100px;
+  background: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(22, 160, 133, 0.75)),
+      to(rgba(22, 160, 133, 0.75))
+    ),
+    url('../images/hypnotize.png');
+  background: -webkit-linear-gradient(
+      rgba(22, 160, 133, 0.75),
+      rgba(22, 160, 133, 0.75)
+    ),
+    url('../images/hypnotize.png');
+  background: -o-linear-gradient(
+      rgba(22, 160, 133, 0.75),
+      rgba(22, 160, 133, 0.75)
+    ),
+    url('../images/hypnotize.png');
   background: linear-gradient(
       rgba(22, 160, 133, 0.75),
       rgba(22, 160, 133, 0.75)
     ),
     url('../images/hypnotize.png');
   padding: 45px 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
   color: whitesmoke;
   font-size: 35px;
   font-family: 'Open Sans';
   font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .divider button {
@@ -282,6 +341,8 @@ nav li a .fas {
   color: rgba(26, 188, 156, 1);
   border: none;
   border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -292,11 +353,10 @@ nav li a .fas {
 /*Featurette*/
 
 .featurette {
-  width: 95%;
-  margin: 0 auto;
-  padding: 90px 10% 45px 10%;
+  width: 75%;
   color: #666;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .featurette h1 {
@@ -328,11 +388,12 @@ nav li a .fas {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px 0;
 }
 
 .main h1 {
@@ -352,10 +413,10 @@ nav li a .fas {
 /*About Me*/
 
 .aboutMe {
-  margin: 50px 0;
   position: relative;
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #eeeeee;
   background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M81.28 88H68.413l19.298 19.298L81.28 88zm2.107 0h13.226L90 107.838 83.387 88zm15.334 0h12.866l-19.298 19.298L98.72 88zm-32.927-2.207L73.586 78h32.827l.5.5 7.294 7.293L115.414 87l-24.707 24.707-.707.707L64.586 87l1.207-1.207zm2.62.207L74 80.414 79.586 86H68.414zm16 0L90 80.414 95.586 86H84.414zm16 0L106 80.414 111.586 86h-11.172zm-8-6h11.173L98 85.586 92.414 80zM82 85.586L87.586 80H76.414L82 85.586zM17.414 0L.707 16.707 0 17.414V0h17.414zM4.28 0L0 12.838V0h4.28zm10.306 0L2.288 12.298 6.388 0h8.198zM180 17.414L162.586 0H180v17.414zM165.414 0l12.298 12.298L173.612 0h-8.198zM180 12.838L175.72 0H180v12.838zM0 163h16.413l.5.5 7.294 7.293L25.414 172l-8 8H0v-17zm0 10h6.613l-2.334 7H0v-7zm14.586 7l7-7H8.72l-2.333 7h8.2zM0 165.414L5.586 171H0v-5.586zM10.414 171L16 165.414 21.586 171H10.414zm-8-6h11.172L8 170.586 2.414 165zM180 163h-16.413l-7.794 7.793-1.207 1.207 8 8H180v-17zm-14.586 17l-7-7h12.865l2.333 7h-8.2zM180 173h-6.613l2.334 7H180v-7zm-21.586-2l5.586-5.586 5.586 5.586h-11.172zM180 165.414L174.414 171H180v-5.586zm-8 5.172l5.586-5.586h-11.172l5.586 5.586zM152.933 25.653l1.414 1.414-33.94 33.942-1.416-1.416 33.943-33.94zm1.414 127.28l-1.414 1.414-33.942-33.94 1.416-1.416 33.94 33.943zm-127.28 1.414l-1.414-1.414 33.94-33.942 1.416 1.416-33.943 33.94zm-1.414-127.28l1.414-1.414 33.942 33.94-1.416 1.416-33.94-33.943zM0 85c2.21 0 4 1.79 4 4s-1.79 4-4 4v-8zm180 0c-2.21 0-4 1.79-4 4s1.79 4 4 4v-8zM94 0c0 2.21-1.79 4-4 4s-4-1.79-4-4h8zm0 180c0-2.21-1.79-4-4-4s-4 1.79-4 4h8z' fill='%23dddddd' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
   color: whitesmoke;
@@ -366,7 +427,8 @@ nav li a .fas {
   display: block;
   padding: 100px 0 125px 0;
   margin: 0 auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #444;
   width: 60%;
   top: 0;
@@ -374,14 +436,21 @@ nav li a .fas {
 }
 
 .aboutMe span .fas {
-  padding: 10px;
+  padding: 25px 10px;
 }
 
 .profileImg {
+  position: absolute;
   height: 150px;
   width: 150px;
+  top: -45px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   border-radius: 50%;
   background: #1abc9c;
+  z-index: 999;
 }
 
 .aboutMe:before {
@@ -389,8 +458,8 @@ nav li a .fas {
   background: #fcfcfc;
   height: 80px;
   -webkit-transform: skewY(-2deg);
-  -ms-transform: skewY(-2deg);
-  transform: skewY(-2deg);
+      -ms-transform: skewY(-2deg);
+          transform: skewY(-2deg);
   position: absolute;
   left: 0;
   right: 0;
@@ -403,8 +472,8 @@ nav li a .fas {
   background: #fcfcfc;
   height: 80px;
   -webkit-transform: skewY(2deg);
-  -ms-transform: skewY(2deg);
-  transform: skewY(2deg);
+      -ms-transform: skewY(2deg);
+          transform: skewY(2deg);
   position: absolute;
   left: 0;
   right: 0;
@@ -447,34 +516,40 @@ nav li a .fas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-orient: vertical;
+
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+
+      -ms-flex-direction: column;
+
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   color: whitesmoke;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   background: #16a085;
   border-radius: 2px;
   -webkit-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  transform: translateY(100%);
-  -webkit-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: opacity 0.3s ease-out 0.1s, -webkit-transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out 0.1s, -webkit-transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out, opacity 0.3s ease-out 0.1s;
   transition: transform 0.3s ease-out, opacity 0.3s ease-out 0.1s;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out 0.1s, -webkit-transform 0.3s ease-out;
 }
 
 .project:hover .projectDetails {
   -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
   opacity: 1;
 }
 
@@ -505,7 +580,8 @@ nav li a .fas {
 
 footer {
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #eee;
   color: #555;
   font-size: 14px;
@@ -534,8 +610,8 @@ footer .social .fab {
   font-size: 20px;
   color: #fcfcfc;
   border-radius: 50%;
-  -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
   -o-transition: transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
@@ -545,8 +621,8 @@ footer .social .fab {
 
 footer .social .fab:hover {
   -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media only screen and (max-width: 926px) {
@@ -580,16 +656,16 @@ footer .social .fab:hover {
     font-size: 18px;
     width: 250px;
   }
-  .contain {
+  .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 35px 0;
     padding: 0;
     border: none;
     -webkit-box-shadow: none;
-    box-shadow: none;
+            box-shadow: none;
     overflow: hidden;
     height: auto;
   }
@@ -602,7 +678,7 @@ footer .social .fab:hover {
     margin: 15px auto;
     padding: 25px;
     -webkit-box-shadow: none;
-    box-shadow: none;
+            box-shadow: none;
   }
 
   .box .icon {
@@ -612,7 +688,10 @@ footer .social .fab:hover {
   }
 
   .divider {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .divider button {
@@ -621,7 +700,6 @@ footer .social .fab:hover {
 
   .featurette {
     padding: 40px 0 0 0;
-    margin: 0 auto;
     border: none;
   }
 
